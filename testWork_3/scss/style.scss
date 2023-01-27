@@ -1,0 +1,322 @@
+@import "nullstyle.scss";
+html {
+    scroll-behavior: smooth;
+}
+a{
+    color: white;
+}
+
+
+//-------------------firstblock--------------//
+
+.first-block{
+    background-image: url(../images/background_1.png);
+    border: 2px dashed grey;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    color: white;
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 25px;
+}
+.menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+		&__item {
+            margin: 0px 50px 0px 0px;
+		}
+}
+.travel {
+    text-align: center;
+    color: white;
+    &__text {
+        margin: 130px 0px 20px 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+    &__description {
+        margin: 20px 0px 20px 0px;
+        font-size: 15px;
+    }
+    &__button {
+        margin: 40px 0px 314px 0px;
+        background-color: #1C5AB7;
+        padding: 15px 40px;
+        border-radius: 3%;
+        color: white;
+    }
+    &__icon  {
+        position: absolute;
+        top: 55%;
+        left: 48%;
+        margin: 200px 0px 200px 0px;
+    }
+}
+
+//-------------------firstblock--------------//
+
+
+//-------------------selection--------------//
+
+.selection {
+    border: 2px dashed grey;
+    background-color: black;
+    &__text {
+        padding: 50px 0px 20px 0px;
+        font-size: 25px;
+        text-align: center;
+        color: #A7C3D3;
+    }
+    &__title {
+        text-align: center;
+        font-size: 27px;
+        text-transform: uppercase;
+        color: white;
+        margin: 0px 0px 50px 0px;
+    }
+    &__first-row {
+        display: flex;
+        flex: 0 0 25%;
+    }
+    &__second-row {
+        display: flex;
+        flex: 0 0 25%;
+    }
+}
+.item {
+    &__photo img{
+        margin: 0px 20px 0px 0px;
+        width: 280px;
+    }
+    &__text {
+        text-transform: uppercase;
+        margin: 15px 0px 25px 20px;
+        color: white;
+    }
+}
+
+//-------------------firstblock--------------//
+
+
+//-------------------info--------------//
+
+.info {
+    border: 2px dashed grey;
+    background-color: black;
+    &__subtitle {
+        padding: 50px 0px 20px 0px;
+        text-align: center;
+        color: #A7C3D3;
+    }
+    &__title {
+        text-align: center;
+        color: white;
+    }
+    &__text {
+        max-width: 735px;
+        margin: 40px auto;
+        text-align: center;
+        color: white;
+    }
+    .item {
+        display: flex;
+        flex: 0 0 25%;
+		&__row {
+            max-width: 200px;
+            text-align: center;
+            margin: 0 auto;
+		}
+		&__title {
+            color: white;
+            margin: 10px 0px;
+            font-size: 16px;
+		}
+		&__info {
+            color: white;
+            max-width: 260px;
+            padding: 0px 0px 50px 0px;
+		}
+}
+}
+
+//-------------------info--------------//
+
+
+//-------------------reviews--------------//
+
+.reviews {
+    border: 2px dashed grey;
+    background-color: black;
+    &__photo {
+        position: relative;
+    }
+    &__photo-first {
+        padding: 40px 0px 0px 0px;
+    }
+    &__photo-second {
+        position: absolute;
+        top: 40%;
+        left: -10%;
+        width: 250px;
+        height: 400px;
+    }
+    &__photo-third {
+        position: absolute;
+        top: 25%;
+        left: 85%;
+        width: 320px;
+    }
+    &__icon {
+        position: absolute;
+        top: 43%;
+        left: 43%;
+    }
+    &__title {
+        color: white;
+        font-size: 35px;
+        text-align: center;
+        margin: 70px 0px 50px 0px;
+    }
+}
+.items {
+    display: flex;
+    flex: 0 0 25%;
+    text-align: center;
+    &__row {
+        margin: 0 auto;
+    }
+    &__logo {
+        display: flex;
+    }
+    &__logo-text {
+        margin: 0px 0px 0px 5px;
+        color: white;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+    &__icon {
+        margin: 15px 0px;
+    }
+    &__reviews {
+        color:#A7C3D3;
+        font-size: 20px;
+        display: block;
+        margin: 0px 0px 50px 0px;
+        text-decoration: underline;
+    }
+}
+//-------------------reviews--------------//
+
+
+//-------------------place--------------//
+
+.place {
+    border: 2px dashed grey;
+    background-color: black;
+    text-align: center;
+    &__title {
+        color: #A7C3D3;
+        margin: 50px 0px 0px 0px;
+        font-size: 30px;
+    }
+    &__subtitle {
+        color: white;
+        margin: 15px 0px 25px 0px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &__photo img{
+        width: 900px;
+    }
+    &__request {
+        color: #A7C3D3;
+        margin: 40px 0px 20px 0px;
+        font-size: 30px;
+    }
+    &__request-text {
+        color: white;
+        font-size: 25px;
+        margin: 0px 0px 50px 0px;
+        text-transform: uppercase;
+    }
+    &__request-form {
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 50px 0px;
+    }
+    &__request-form-input {
+        color: white;
+        padding: 20px 200px;
+        background-color: #16161D;
+        box-shadow: 4px 4px 8px rgba(51, 51, 51, 0.25);
+        border-radius: 8px;
+    }
+    &__request-form-btn {
+        color: white;
+        background-color: #1C5AB7;
+        padding: 20px 40px;
+        box-shadow: 4px 4px 8px rgba(51, 51, 51, 0.25);
+        border-radius: 8px;
+    }
+}
+
+//-------------------place--------------//
+
+
+//-------------------footer--------------//
+
+.footer {
+    color: white;
+    padding: 40px 0px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        font-size: 25px;
+    }
+    &__menu {
+        display: flex; 
+    }
+    &__menu-item {
+        margin: 0px 50px 0px 0px;   
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    &__icon-facebook {
+        margin-right: 30px;
+    }
+    &__icon-inst {
+        margin-right: 30px;
+
+    }
+    &__icon-telegramm {
+        margin-right: 30px;
+
+    }
+}
+//-------------------footer--------------//
+
+
+
+
+
+
