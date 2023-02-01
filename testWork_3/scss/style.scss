@@ -10,11 +10,12 @@ a{
 //-------------------firstblock--------------//
 
 .first-block{
-    background-image: url(../images/background_1.png);
+    background: url(../images/background_1.png) center center no-repeat ;
     border: 2px dashed grey;
+    background-size: cover;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .header {
@@ -22,6 +23,7 @@ a{
     padding: 50px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .logo {
     font-size: 25px;
@@ -30,10 +32,15 @@ a{
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
 		&__item {
             margin: 0px 50px 0px 0px;
-		}
+		}   
 }
+
+.burger{
+    margin-right: 20px;
+}  
 .travel {
     text-align: center;
     color: white;
@@ -48,6 +55,9 @@ a{
     &__title {
         font-size: 50px;
         text-transform: uppercase;
+        display:block;
+        max-width:100%;
+        height:auto;
     }
     &__description {
         margin: 20px 0px 20px 0px;
@@ -92,10 +102,16 @@ a{
     &__first-row {
         display: flex;
         flex: 0 0 25%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &__second-row {
         display: flex;
         flex: 0 0 25%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
     }
 }
 .item {
@@ -136,6 +152,7 @@ a{
     .item {
         display: flex;
         flex: 0 0 25%;
+        flex-wrap: wrap;
 		&__row {
             max-width: 200px;
             text-align: center;
@@ -163,29 +180,36 @@ a{
     border: 2px dashed grey;
     background-color: black;
     &__photo {
-        position: relative;
+       position: relative; 
     }
     &__photo-first {
         padding: 40px 0px 0px 0px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+
     }
-    &__photo-second {
-        position: absolute;
-        top: 40%;
-        left: -10%;
-        width: 250px;
-        height: 400px;
+
+ /*   &__photo-second {
+        display:block;
+        max-width:100%;
+        max-height:400px;
+        margin: -450px 0px 0px -130px;
+        z-index: 5; 
+  
     }
     &__photo-third {
-        position: absolute;
-        top: 25%;
-        left: 85%;
-        width: 320px;
+        display:block;
+        max-width:300px;
+        height:auto;
+        margin: -500px 0px 0px 88%;
+ 
     }
     &__icon {
-        position: absolute;
-        top: 43%;
-        left: 43%;
+
+
     }
+    */
     &__title {
         color: white;
         font-size: 35px;
@@ -194,14 +218,17 @@ a{
     }
 }
 .items {
+    justify-content: center;
     display: flex;
     flex: 0 0 25%;
+    flex-wrap: wrap;
     text-align: center;
     &__row {
-        margin: 0 auto;
+        margin-right: 30px;
     }
     &__logo {
         display: flex;
+        flex-wrap: wrap;
     }
     &__logo-text {
         margin: 0px 0px 0px 5px;
@@ -241,7 +268,9 @@ a{
         text-transform: uppercase;
     }
     &__photo img{
-        width: 900px;
+        display:block;
+        max-width:100%;
+        height:auto;
     }
     &__request {
         color: #A7C3D3;
@@ -260,8 +289,10 @@ a{
         padding: 0px 0px 50px 0px;
     }
     &__request-form-input {
+        width: 500px;
+        text-align: center;
         color: white;
-        padding: 20px 200px;
+      //  padding: 20px 200px; //
         background-color: #16161D;
         box-shadow: 4px 4px 8px rgba(51, 51, 51, 0.25);
         border-radius: 8px;
@@ -286,21 +317,31 @@ a{
     &__row {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__logo {
         font-size: 25px;
+        margin-right: 50px;
     }
     &__menu {
         display: flex; 
+        flex-wrap: wrap;
     }
     &__menu-item {
         margin: 0px 50px 0px 0px;   
     }
+
+    &__icon-back {
+        margin-right: 20px;
+    }
+
     &__icon {
         display: flex;
         justify-content: center;
         margin-top: 20px;
+        flex-wrap: wrap;
     }
+
     &__icon-facebook {
         margin-right: 30px;
     }
@@ -315,7 +356,46 @@ a{
 }
 //-------------------footer--------------//
 
+@media screen and (max-device-width: 767px){
+    nav.menu {
+        display: none;
+    }
+}
 
+@media screen and (max-device-width: 576px){
+    h1.travel__title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-device-width: 576px){
+    .footer__row{
+        display: block;
+        text-align: center;
+    }
+    .footer__menu{
+        justify-content: center;
+        margin: 15px 0px 15px 0px;
+    }
+    .footer__icon-back{
+        margin-right: 50px;
+    }
+
+}
+
+@media screen and (max-device-width: 420px){
+    .footer__menu{
+        font-size: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__logo{
+        text-align: center;
+    }
+    .footer__icon-back{
+        margin-right: 50px;
+    }
+}
 
 
 
